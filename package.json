@@ -1,0 +1,25 @@
+{
+  "name": "mini-project-movie-db",
+  "version": "1.0.0",
+  "description": "This repository contains a simple movie database created with express and MySQL.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joedjensen/mini-project-movie-db.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joedjensen/mini-project-movie-db/issues"
+  },
+  "homepage": "https://github.com/joedjensen/mini-project-movie-db#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3"
+  }
+}
