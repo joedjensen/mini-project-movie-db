@@ -1,17 +1,5 @@
 const getMovies = require('express').Router();
-const mysql = require("mysql2")
-
-const db = mysql.createConnection(
-    {
-      host: 'localhost',
-      // MySQL username,
-      user: 'root',
-      // MySQL password
-      password: '',
-      database: 'movies_db'
-    },
-    console.log(`Connected to the courses_db database.`)
-  );
+const db = require("../db/connect")
 
   getMovies.get('/', (req, res) => {
       db.query("Select * from movies", function(err, table) {

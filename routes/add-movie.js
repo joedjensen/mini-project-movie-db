@@ -1,17 +1,5 @@
 const addMovie = require('express').Router();
-const mysql = require("mysql2")
-
-const db = mysql.createConnection(
-    {
-      host: 'localhost',
-      // MySQL username,
-      user: 'root',
-      // MySQL password
-      password: '',
-      database: 'movies_db'
-    },
-    console.log(`Connected to the courses_db database.`)
-  );
+const db = require('../db/connect')
 
 addMovie.post('/', (req, res) => {
     console.log(req.body);
